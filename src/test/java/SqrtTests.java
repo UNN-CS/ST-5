@@ -26,7 +26,7 @@ public class SqrtTests {
 
     @Test
     public void testSqrtOfNegativeNumber() {
-        Sqrt sqrt = new Sqrt(-25); // Square root of a negative number should return NaN
+        Sqrt sqrt = new Sqrt(-25); // Square root of a negative number should throw exception
         assertThrows(Throwable.class, sqrt::calc);
     }
 
