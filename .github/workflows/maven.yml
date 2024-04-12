@@ -39,7 +39,7 @@ jobs:
       if: always()
       with:
           name: Maven Tests
-          path: *.xml
+          path: /*.xml
           reporter: java-junit
           fail-on-error: true
       
