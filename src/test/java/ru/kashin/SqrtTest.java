@@ -10,25 +10,25 @@ import static org.junit.Assert.*;
 public class SqrtTest {
     @Test
     public void testSqrtOfPerfectSquare() {
-        Sqrt sqrt = new Sqrt(25); // Square root of 25 is 5
+        Sqrt sqrt = new Sqrt(25);
         Assert.assertEquals(5.0, sqrt.calc(), 0.000001);
     }
 
     @Test
     public void testSqrtOfNonPerfectSquare() {
-        Sqrt sqrt = new Sqrt(30); // Square root of 30 is approximately 5.477
+        Sqrt sqrt = new Sqrt(30);
         Assert.assertEquals(Math.sqrt(30), sqrt.calc(), 0.000001);
     }
 
     @Test
     public void testSqrtOfZero() {
-        Sqrt sqrt = new Sqrt(0); // Square root of 0 is 0
+        Sqrt sqrt = new Sqrt(0);
         Assert.assertEquals(0.0, sqrt.calc(), 0.0001);
     }
 
     @Test
     public void testSqrtOfNegativeNumber() {
-        Sqrt sqrt = new Sqrt(-25); // Square root of a negative number should throw exception
+        Sqrt sqrt = new Sqrt(-25);
         Assert.assertThrows(Throwable.class, sqrt::calc);
     }
 
