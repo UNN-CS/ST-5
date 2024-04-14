@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static junit.framework.Assert.*;
 
-public class SqrtClassTests {
+public class SqrtClassTest {
     private static final double DELTA = 1e-6;
 
     @Test
