@@ -1,5 +1,6 @@
 package com.st5;
 
+import org.junit.Test;
 import org.junit.jupiter.api.Test;
 
 import static junit.framework.Assert.*;
