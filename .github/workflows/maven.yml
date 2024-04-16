@@ -12,9 +12,9 @@ on: [push, pull_request]
 
 
 permissions:
-      contents: write
-      pull-requests: write
-      repository-projects: write
+  contents: 'read'
+  id-token: 'write'
+  issues: 'write' 
 
 jobs:
   build:
