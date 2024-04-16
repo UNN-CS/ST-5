@@ -10,9 +10,15 @@ name: Java CI with Maven
 
 on: [push, pull_request]
 
+
+permissions:
+      contents: read
+      actions: read
+      checks: write
+
 jobs:
   build:
-    permissions: write-all
+
     runs-on: ubuntu-latest
 
     steps:
