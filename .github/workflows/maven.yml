@@ -14,8 +14,8 @@ on: [push, pull_request]
 permissions:
   id-token: write
   contents: read
-  checks: write-all
-  issues: write-all
+  checks: write
+  issues: write
 
 jobs:
   build:
