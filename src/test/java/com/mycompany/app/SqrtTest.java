@@ -34,10 +34,10 @@ class SqrtTest {
     }
 
     @Test
-    void improveMovesCloserToTarget() {
+    void refineMovesCloserToTarget() {
         Sqrt sqrt = new Sqrt(9.0);
-        double improved = sqrt.refine(1.0, 9.0);
-        double before = Math.abs(1.0 * 1.0 - 9.0);
+        double improved = sqrt.refine(5.0, 9.0);
+        double before = Math.abs(5.0 * 5.0 - 9.0);
         double after = Math.abs(improved * improved - 9.0);
         assertTrue(after < before);
     }
