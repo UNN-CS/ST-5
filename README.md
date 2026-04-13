@@ -9,7 +9,7 @@
 **по 19.04.2026** ![Relative date](https://img.shields.io/date/1776632400)
 
 
-Перед началом работы необходимо установить пакет разработчика JDK и утилиту **Maven** ![https://maven.apache.org](https://maven.apache.org)
+Перед началом работы необходимо установить пакет разработчика JDK и утилиту **Maven** [https://maven.apache.org](https://maven.apache.org)
 
 
 ## Задание №1. Создание проекта Maven
