@@ -1,13 +1,12 @@
-package com.mycompany.app; 
- 
-import static org.junit.jupiter.api.Assertions.*; 
-import org.junit.jupiter.api.Test; 
+package com.mycompany.app;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
 
-/**
- * Unit test for simple App.
- */
 public class AppTest {
+
     double eps = 0.00000001;
 
     @Test
@@ -52,7 +51,7 @@ public class AppTest {
     @Test
     public void testCalcTwentyFive() {
         assertEquals(5.0, new Sqrt(25.0).calc(), eps);
-}
+    }
 
     @Test
     public void testCalcOne() {
