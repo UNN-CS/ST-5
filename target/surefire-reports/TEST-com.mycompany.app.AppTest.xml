@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="com.mycompany.app.AppTest" time="0.082" tests="11" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="com.mycompany.app.AppTest" time="0.094" tests="11" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/home/ntimofeev/this-guy-this-guy-st/ST-5/my-app/target/test-classes:/home/ntimofeev/this-guy-this-guy-st/ST-5/my-app/target/classes:/home/ntimofeev/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.0/junit-jupiter-api-5.11.0.jar:/home/ntimofeev/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/ntimofeev/.m2/repository/org/junit/platform/junit-platform-commons/1.11.0/junit-platform-commons-1.11.0.jar:/home/ntimofeev/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/ntimofeev/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.0/junit-jupiter-params-5.11.0.jar:"/>
+    <property name="java.class.path" value="/home/ntimofeev/this-guy-this-guy-st/ST-5/target/test-classes:/home/ntimofeev/this-guy-this-guy-st/ST-5/target/classes:/home/ntimofeev/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.0/junit-jupiter-api-5.11.0.jar:/home/ntimofeev/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/ntimofeev/.m2/repository/org/junit/platform/junit-platform-commons/1.11.0/junit-platform-commons-1.11.0.jar:/home/ntimofeev/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/ntimofeev/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.0/junit-jupiter-params-5.11.0.jar:"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
@@ -12,9 +12,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk-25.0.2-oracle-x64/lib"/>
-    <property name="sun.java.command" value="/home/ntimofeev/this-guy-this-guy-st/ST-5/my-app/target/surefire/surefirebooter-20260414114551274_3.jar /home/ntimofeev/this-guy-this-guy-st/ST-5/my-app/target/surefire 2026-04-14T11-45-51_136-jvmRun1 surefire-20260414114551274_1tmp surefire_0-20260414114551274_2tmp"/>
+    <property name="sun.java.command" value="/home/ntimofeev/this-guy-this-guy-st/ST-5/target/surefire/surefirebooter-20260414170004497_3.jar /home/ntimofeev/this-guy-this-guy-st/ST-5/target/surefire 2026-04-14T17-00-04_389-jvmRun1 surefire-20260414170004497_1tmp surefire_0-20260414170004497_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/home/ntimofeev/this-guy-this-guy-st/ST-5/my-app/target/test-classes:/home/ntimofeev/this-guy-this-guy-st/ST-5/my-app/target/classes:/home/ntimofeev/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.0/junit-jupiter-api-5.11.0.jar:/home/ntimofeev/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/ntimofeev/.m2/repository/org/junit/platform/junit-platform-commons/1.11.0/junit-platform-commons-1.11.0.jar:/home/ntimofeev/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/ntimofeev/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.0/junit-jupiter-params-5.11.0.jar:"/>
+    <property name="surefire.test.class.path" value="/home/ntimofeev/this-guy-this-guy-st/ST-5/target/test-classes:/home/ntimofeev/this-guy-this-guy-st/ST-5/target/classes:/home/ntimofeev/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.0/junit-jupiter-api-5.11.0.jar:/home/ntimofeev/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/ntimofeev/.m2/repository/org/junit/platform/junit-platform-commons/1.11.0/junit-platform-commons-1.11.0.jar:/home/ntimofeev/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/ntimofeev/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.0/junit-jupiter-params-5.11.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/ntimofeev"/>
     <property name="user.language" value="ru"/>
@@ -22,12 +22,12 @@
     <property name="java.version.date" value="2026-01-20"/>
     <property name="java.home" value="/usr/lib/jvm/jdk-25.0.2-oracle-x64"/>
     <property name="file.separator" value="/"/>
-    <property name="basedir" value="/home/ntimofeev/this-guy-this-guy-st/ST-5/my-app"/>
+    <property name="basedir" value="/home/ntimofeev/this-guy-this-guy-st/ST-5"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/ntimofeev/this-guy-this-guy-st/ST-5/my-app/target/surefire/surefirebooter-20260414114551274_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/ntimofeev/this-guy-this-guy-st/ST-5/target/surefire/surefirebooter-20260414170004497_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="25.0.2+10-LTS-69"/>
     <property name="user.name" value="ntimofeev"/>
@@ -41,7 +41,7 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="/tmp"/>
     <property name="java.version" value="25.0.2"/>
-    <property name="user.dir" value="/home/ntimofeev/this-guy-this-guy-st/ST-5/my-app"/>
+    <property name="user.dir" value="/home/ntimofeev/this-guy-this-guy-st/ST-5"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="native.encoding" value="UTF-8"/>
@@ -54,15 +54,15 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="testThrowsOnSmallArgValue" classname="com.mycompany.app.AppTest" time="0.033"/>
+  <testcase name="testThrowsOnSmallArgValue" classname="com.mycompany.app.AppTest" time="0.038"/>
   <testcase name="shouldAnswerWithTrue" classname="com.mycompany.app.AppTest" time="0.002"/>
   <testcase name="test10000to100" classname="com.mycompany.app.AppTest" time="0.002"/>
   <testcase name="test0to0" classname="com.mycompany.app.AppTest" time="0.001"/>
-  <testcase name="test1to1" classname="com.mycompany.app.AppTest" time="0.001"/>
+  <testcase name="test1to1" classname="com.mycompany.app.AppTest" time="0.002"/>
   <testcase name="test4to2" classname="com.mycompany.app.AppTest" time="0.001"/>
   <testcase name="test02tosq02" classname="com.mycompany.app.AppTest" time="0.001"/>
-  <testcase name="test009to03" classname="com.mycompany.app.AppTest" time="0.001"/>
+  <testcase name="test009to03" classname="com.mycompany.app.AppTest" time="0.002"/>
   <testcase name="test1000tosq1000" classname="com.mycompany.app.AppTest" time="0.001"/>
-  <testcase name="test2tosq0" classname="com.mycompany.app.AppTest" time="0.001"/>
-  <testcase name="testThrows" classname="com.mycompany.app.AppTest" time="0.001"/>
+  <testcase name="test2tosq0" classname="com.mycompany.app.AppTest" time="0.002"/>
+  <testcase name="testThrows" classname="com.mycompany.app.AppTest" time="0.002"/>
 </testsuite>
