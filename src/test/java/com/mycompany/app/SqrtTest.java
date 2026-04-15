@@ -25,6 +25,7 @@ public class SqrtTest {
     @Test
     public void testImprove() {
         Sqrt sqrt = new Sqrt(4.0);
+        // Formula: improve(guess, x) = (guess + x/guess) / 2
         assertEquals(2.0, sqrt.improve(2.0, 4.0), DELTA);
         assertEquals(2.05, sqrt.improve(2.5, 4.0), DELTA);
         assertEquals(2.00000001, sqrt.improve(2.00000001, 4.0), DELTA);
@@ -92,7 +93,10 @@ public class SqrtTest {
     @Test
     public void testImproveWithDifferentGuess() {
         Sqrt sqrt = new Sqrt(16.0);
-        assertEquals(4.25, sqrt.improve(5.0, 16.0), DELTA);
+        // (5.0 + 16.0/5.0) / 2 = (5.0 + 3.2) / 2 = 8.2 / 2 = 4.1
+        assertEquals(4.1, sqrt.improve(5.0, 16.0), DELTA);
         assertEquals(4.0, sqrt.improve(4.0, 16.0), DELTA);
+        // (10.0 + 16.0/10.0) / 2 = (10.0 + 1.6) / 2 = 11.6 / 2 = 5.8
+        assertEquals(5.8, sqrt.improve(10.0, 16.0), DELTA);
     }
 }
