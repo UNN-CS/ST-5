@@ -1,7 +1,6 @@
 package com.mycompany.app;
 
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.BeforeEach;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class SqrtTest {
@@ -26,8 +25,9 @@ public class SqrtTest {
     @Test
     public void testImprove() {
         Sqrt sqrt = new Sqrt(4.0);
-        assertEquals(2.5, sqrt.improve(2.0, 4.0), DELTA);
+        assertEquals(2.0, sqrt.improve(2.0, 4.0), DELTA);
         assertEquals(2.05, sqrt.improve(2.5, 4.0), DELTA);
+        assertEquals(2.00000001, sqrt.improve(2.00000001, 4.0), DELTA);
     }
 
     @Test
@@ -87,5 +87,12 @@ public class SqrtTest {
         Sqrt sqrt = new Sqrt(2.0);
         double result = sqrt.calc();
         assertEquals(result * result, 2.0, 1e-8);
+    }
+
+    @Test
+    public void testImproveWithDifferentGuess() {
+        Sqrt sqrt = new Sqrt(16.0);
+        assertEquals(4.25, sqrt.improve(5.0, 16.0), DELTA);
+        assertEquals(4.0, sqrt.improve(4.0, 16.0), DELTA);
     }
 }
