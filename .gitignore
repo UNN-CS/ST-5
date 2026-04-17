@@ -1,0 +1,35 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# Maven Wrapper (раскомментируйте следующую строку, если решите не коммитить jar обёртки)
+# .mvn/wrapper/maven-wrapper.jar
+
+# Java (артефакты сборки обычно в target/; *.jar не игнорируем на всём дереве — на случай lib/*.jar)
+*.class
+hs_err_pid*
+replay_pid*
+
+# IDE / редакторы
+.idea/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
