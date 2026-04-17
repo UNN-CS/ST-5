@@ -6,7 +6,6 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-
 name: Java CI with Maven
 
 on: [push, pull_request]
@@ -29,4 +28,4 @@ jobs:
       run: mvn -B package --file pom.xml
 
     - name: Run the Maven verify phase
-      run: mvn --batch-mode --update-snapshots verify
+      run: mvn --batch-mode --update-snapshots verify --file pom.xml
