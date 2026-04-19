@@ -42,7 +42,6 @@ class SqrtTest {
     @Test
     void testImprove() {
         Sqrt sqrt = new Sqrt(-1.0);
-
         double improved1 = sqrt.improve(1.0, 2.0);
         assertEquals(1.5, improved1, DELTA);
 
@@ -56,7 +55,6 @@ class SqrtTest {
     @Test
     void testIter() {
         Sqrt sqrt = new Sqrt(-1.0);
-
         double result = sqrt.iter(1.0, 2.0);
         assertEquals(Math.sqrt(2), result, 1e-8);
 
