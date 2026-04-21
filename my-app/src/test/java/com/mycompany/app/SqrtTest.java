@@ -14,7 +14,7 @@ class SqrtTest {
         assertEquals(2.0, new Sqrt(4.0).calc(), DELTA);
     }
 
-    @Test @DisplayName("calc: sqrt(2) ≈ 1.4142")
+    @Test @DisplayName("calc: sqrt(2) примерно 1.4142")
     void testCalcTwo() {
         assertEquals(1.41421356, new Sqrt(2.0).calc(), 0.000001);
     }
@@ -29,7 +29,7 @@ class SqrtTest {
         assertEquals(1.0, new Sqrt(1.0).calc(), DELTA);
     }
 
-    @Test @DisplayName("calc: отрицательное число → исключение")
+    @Test @DisplayName("calc: отрицательное число, тогда исключение")
     void testCalcNegative() {
         assertThrows(IllegalArgumentException.class, () -> new Sqrt(-4.0).calc());
     }
