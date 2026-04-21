@@ -1,4 +1,4 @@
-# ST-5 Модульное тестирование на Java с использованием jUnit и Maven
+ds# ST-5 Модульное тестирование на Java с использованием jUnit и Maven
 
 
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/UNN-CS/ST-5)
