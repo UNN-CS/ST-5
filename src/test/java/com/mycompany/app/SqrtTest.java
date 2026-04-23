@@ -1,0 +1,76 @@
+package com.mycompany.app;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class SqrtTest {
+
+    @Test
+    void averageShouldReturnMiddleValueForPositiveNumbers() {
+        Sqrt sqrt = new Sqrt(1.0);
+        assertEquals(5.0, sqrt.average(4.0, 6.0), 1e-12);
+    }
+
+    @Test
+    void averageShouldWorkWithNegativeNumbers() {
+        Sqrt sqrt = new Sqrt(1.0);
+        assertEquals(-3.0, sqrt.average(-2.0, -4.0), 1e-12);
+    }
+
+    @Test
+    void goodShouldReturnTrueWhenGuessIsAccurateEnough() {
+        Sqrt sqrt = new Sqrt(1.0);
+        assertTrue(sqrt.good(3.0, 9.0));
+    }
+
+    @Test
+    void goodShouldReturnFalseWhenGuessIsFarFromRoot() {
+        Sqrt sqrt = new Sqrt(1.0);
+        assertFalse(sqrt.good(2.0, 9.0));
+    }
+
+    @Test
+    void improveShouldProduceBetterApproximationForTwo() {
+        Sqrt sqrt = new Sqrt(1.0);
+        assertEquals(1.5, sqrt.improve(1.0, 2.0), 1e-12);
+    }
+
+    @Test
+    void improveShouldKeepExactRootUnchanged() {
+        Sqrt sqrt = new Sqrt(1.0);
+        assertEquals(3.0, sqrt.improve(3.0, 9.0), 1e-12);
+    }
+
+    @Test
+    void iterShouldConvergeFromOneForSquareNumber() {
+        Sqrt sqrt = new Sqrt(1.0);
+        assertEquals(4.0, sqrt.iter(1.0, 16.0), 1e-7);
+    }
+
+    @Test
+    void iterShouldReturnGuessImmediatelyWhenGood() {
+        Sqrt sqrt = new Sqrt(1.0);
+        assertEquals(5.0, sqrt.iter(5.0, 25.0), 1e-12);
+    }
+
+    @Test
+    void calcShouldReturnSqrtOfTwo() {
+        Sqrt sqrt = new Sqrt(2.0);
+        assertEquals(Math.sqrt(2.0), sqrt.calc(), 1e-7);
+    }
+
+    @Test
+    void calcShouldReturnSqrtOfFraction() {
+        Sqrt sqrt = new Sqrt(0.25);
+        assertEquals(0.5, sqrt.calc(), 1e-7);
+    }
+
+    @Test
+    void calcShouldReturnSqrtOfLargeNumber() {
+        Sqrt sqrt = new Sqrt(1_000_000.0);
+        assertEquals(1000.0, sqrt.calc(), 1e-6);
+    }
+}
