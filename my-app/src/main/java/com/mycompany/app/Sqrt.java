@@ -1,6 +1,7 @@
 package com.mycompany.app;
 
 public class Sqrt {
+	//delta
     double delta = 0.00000001;
     double arg;
 
