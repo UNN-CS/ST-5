@@ -16,6 +16,10 @@ jobs:
     permissions: write-all
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: my-app
+
     steps:
     - uses: actions/checkout@v3
     - name: Set up JDK 17
@@ -24,6 +28,7 @@ jobs:
         java-version: '17'
         distribution: 'zulu'
         cache: maven
+        cache-dependency-path: my-app/pom.xml
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml
