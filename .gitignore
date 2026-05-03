@@ -1,0 +1,5 @@
+my-app/target/
+*.class
+*.jar
+.idea/
+*.iml
