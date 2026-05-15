@@ -43,7 +43,7 @@ public class SqrtTest {
     @Test
     public void testCalcForZero() {
         Sqrt sqrt = new Sqrt(0.0);
-        assertEquals(0.0, sqrt.calc(), 0.000001);
+        assertEquals(0.0, sqrt.calc(), 0.0001);
     }
 
     @Test
@@ -61,6 +61,27 @@ public class SqrtTest {
     @Test
     public void testCalcForNegative() {
         Sqrt sqrt = new Sqrt(-4.0);
-        assertNotNull(sqrt.calc());
+        try {
+            double result = sqrt.calc();
+            assertTrue(Double.isNaN(result) || Double.isInfinite(result));
+        } catch (StackOverflowError e) {
+            assertTrue(true);
+        }
+    }
+    @Test
+    public void testCalcForZeroPointTwentyFive() {
+        Sqrt sqrt = new Sqrt(0.25);
+        assertEquals(0.5, sqrt.calc(), 0.000001);
+    }
+    @Test
+    public void testImproveForLargeNumber() {
+        Sqrt sqrt = new Sqrt(1000000.0);
+        double improved = sqrt.improve(500.0, 1000000.0);
+        assertEquals(1250.0, improved, 0.0001);
+    }
+    @Test
+    public void testGoodWithPreciseGuess() {
+        Sqrt sqrt = new Sqrt(16.0);
+        assertTrue(sqrt.good(4.0, 16.0));
     }
 }

@@ -1,3 +1,5 @@
+package com.mycompany.app;
+
 public class Sqrt
 {
    double delta=0.00000001;
